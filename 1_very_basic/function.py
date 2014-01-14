@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """
     A function creation and call example.
 """
