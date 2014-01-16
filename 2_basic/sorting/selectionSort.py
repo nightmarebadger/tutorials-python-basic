@@ -26,6 +26,7 @@ def selectionSort(li):
 
     return li
 
+
 if __name__ == "__main__":
     import doctest
     doctest.testmod()

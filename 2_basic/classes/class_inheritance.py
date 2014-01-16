@@ -92,7 +92,6 @@ class Shaman(Enemy):
     False
 
     Silly shaman, you can't heal yourself if you're already dead ...
-
     """
 
     def __init__(self, hp):
@@ -104,6 +103,7 @@ class Shaman(Enemy):
 
         if self.alive:
             self.hp += hp
+
 
 if __name__ == "__main__":
     import doctest

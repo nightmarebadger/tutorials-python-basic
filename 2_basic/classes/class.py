@@ -11,7 +11,6 @@ class Person(object):
     >>> anna = Person("Anna", "Smith", 22)
     >>> anna.say_hello()
     Hello, I am Anna Smith and I am 22 years old!
-
     """
 
     def __init__(self, name, surname, age):
@@ -27,6 +26,7 @@ class Person(object):
             self.surname,
             self.age)
         )
+
 
 if __name__ == "__main__":
     import doctest
