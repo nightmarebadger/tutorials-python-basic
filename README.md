@@ -1,5 +1,5 @@
-tutorials-python-basic
-======================
+Basic Python examples
+=====================
 
 Some quick and dirty basic Python stuff that can be used as examples when
 teaching relative (or complete) beginners.
