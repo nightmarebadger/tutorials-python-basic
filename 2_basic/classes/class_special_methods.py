@@ -9,6 +9,23 @@
 from __future__ import division
 
 
+def gcd(a, b):
+    """Return the greatest common divisor of a and b.
+
+    >>> gcd(2, 10)
+    2
+    >>> gcd(6, 9)
+    3
+    >>> gcd(5, 22)
+    1
+    """
+
+    if a % b == 0:
+        return b
+
+    return gcd(b, a % b)
+
+
 class Fraction(object):
     """A simple fraction."""
 
@@ -145,32 +162,89 @@ class Fraction(object):
         """Multiplication of two Fractions.
 
         >>> print(Fraction(1, 2) * Fraction(2, 5))
-        2/10
+        1/5
         >>> print(Fraction(1, 2) * Fraction(2, -5))
-        -2/10
+        -1/5
         >>> print(Fraction(-1, 2) * Fraction(1, -2))
         1/4
         """
 
-        return Fraction(self.x * oth.x, self.y * oth.y)
+        result = Fraction(self.x * oth.x, self.y * oth.y)
+        result.reduce()
+        return result
 
     def __div__(self, oth):
         """Division of two Fractions.
 
-        >>> print(Fraction(1, 2) / Fraction(2, 5))
-        5/4
+        >>> print(Fraction(1, 2) / Fraction(2, 10))
+        5/2
         >>> print(Fraction(1, 2) / Fraction(2, -5))
         -5/4
         >>> print(Fraction(-3, 5) / Fraction(7, -9))
         27/35
         """
 
-        return Fraction(self.x * oth.y, self.y * oth.x)
+        result = Fraction(self.x * oth.y, self.y * oth.x)
+        result.reduce()
+        return result
 
     def __truediv__(self, oth):
         """True division, used when importing division from __future__ etc."""
 
         return self.__div__(oth)
+
+    def __add__(self, oth):
+        """Addition of two Fractions.
+
+        >>> print(Fraction(1, 2) + Fraction(1, 2))
+        1/1
+        >>> print(Fraction(3, 5) + Fraction(1, 10))
+        7/10
+        """
+
+        x = self.x * oth.y + oth.x * self.y
+        y = self.y * oth.y
+        result = Fraction(x, y)
+        result.reduce()
+        return result
+
+    def __sub__(self, oth):
+        """Substraction of two Fractions.
+
+        >>> print(Fraction(2, 3) - Fraction(1, 3))
+        1/3
+        >>> print(Fraction(8, 6) - Fraction(2, 3))
+        2/3
+        """
+
+        x = self.x * oth.y - oth.x * self.y
+        y = self.y * oth.y
+        result = Fraction(x, y)
+        result.reduce()
+        return result
+
+    def reduce(self):
+        """Reduce the fraction.
+
+        >>> frac = Fraction(2, 4)
+        >>> frac.reduce()
+        >>> print(frac)
+        1/2
+
+        >>> frac = Fraction(5, 8)
+        >>> frac.reduce()
+        >>> print(frac)
+        5/8
+
+        >>> frac = Fraction(-6, 9)
+        >>> frac.reduce()
+        >>> print(frac)
+        -2/3
+        """
+
+        divisor = gcd(self.x, self.y)
+        self.x //= divisor
+        self.y //= divisor
 
 
 if __name__ == "__main__":
