@@ -5,6 +5,7 @@
     version is in the "input3.py" file.
 """
 
+
 # Get an integer from the user (will error on non-number)
 x = int(input("Write an integer: "))
 print(x)
