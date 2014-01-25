@@ -96,6 +96,7 @@ class Shaman(Enemy):
 
     def __init__(self, hp):
         """Call the __init__ from our superclass."""
+
         super(Shaman, self).__init__(hp)
 
     def heal(self, hp):

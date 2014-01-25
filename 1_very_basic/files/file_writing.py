@@ -2,8 +2,8 @@
 
 """
     An example on how to write to a file. Keep in mind that the paths for
-    opening the file are relative, so you need to run this from inside the
-    'files' folder to work properly.
+    opening the file are relative, so you need to run this file from inside the
+    folder it is located in for the tests to work.
 """
 
 

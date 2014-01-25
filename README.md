@@ -6,3 +6,5 @@ teaching relative (or complete) beginners.
 
 Where applicable, examples will come with
 [doctests](http://docs.python.org/2/library/doctest.html).
+
+Unless otherwise specified all examples are written for Python 2.7(.4).
