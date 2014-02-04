@@ -53,6 +53,50 @@ Of course multiple string manipulations together
 >>> our_string.strip().replace('tral', 'gura').split()
 ['hahaha', 'guraala', 'hopsasa']
 
+If you want to get a substring, you can use the same notation as in lists
+
+>>> print(our_string[6:13])
+ahaha t
+
+As in lists, you can also specify the step - for instance if you want to turn
+the whole string around, you could do
+
+>>> print(our_string[::-1].strip())
+asaspoh
+alalart ahahah
+
+There are also easy ways to check if a string starts or ends with a particular
+substring
+
+>>> our_string.endswith('hopsasa')
+True
+>>> our_string.startswith('hejho')
+False
+
+Another useful method (especially when comparing strings) is the .lower() one
+
+>>> print("abCDEfgH".lower())
+abcdefgh
+
+Of course, .upper() also exists
+
+>>> print(our_string.upper())
+     HAHAHA TRALALA
+HOPSASA
+
+What if we have a list of some kind (for instance a list of names) and want to
+join them into a nice string? We can use the .join() method. You call it on a
+"separator" string and pass it a list, then the elements of the list get joined
+together, separated by the "separator" string. The "separator" string can be
+really simple or overly complex.
+
+>>> names = ['Name1', 'Name2', 'Name3', 'Name4']
+>>> print(''.join(names))
+Name1Name2Name3Name4
+>>> print(', '.join(names))
+Name1, Name2, Name3, Name4
+>>> print(' and his/her pal '.join(names))
+Name1 and his/her pal Name2 and his/her pal Name3 and his/her pal Name4
 """
 
 
