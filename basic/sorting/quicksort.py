@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-    A simple quick sort implementation:
-        http://en.wikipedia.org/wiki/Quicksort
+A simple quick sort implementation:
+    http://en.wikipedia.org/wiki/Quicksort
 """
 
 

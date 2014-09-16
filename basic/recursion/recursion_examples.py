@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 
 """
-    A function is recursive when it calls itself (on a smaller piece of the
-    problem). We need to provide a 'stopping criterion' or else the function
-    will call itself indefinitely (therefore hanging the program).
-        http://en.wikipedia.org/wiki/Recursion_(computer_science)
+A function is recursive when it calls itself (on a smaller piece of the
+problem). We need to provide a 'stopping criterion' or else the function will
+call itself indefinitely (therefore hanging the program).
 
-    You can find some simple examples of recursion below, but recursion will
-    also be used in other examples (for instance in some sorting algorithms).
+Wikipedia link on Recursion:
+    http://en.wikipedia.org/wiki/Recursion_(computer_science)
+
+You can find some simple examples of recursion below, but recursion will also
+be used in other examples (for instance in some sorting algorithms).
 """
 
 
@@ -56,12 +58,12 @@ def fibonacci(n):
 
     This example also shows one of the possible problems with
     recursion - we calculate the same things over and over again! For instance,
-    if we call fibonacci(5), we get a tree like this:
+    if we call fibonacci(5), we get a tree like this::
 
-            5
-       4         3
-     3   2     2   1
-    2 1
+                5
+           4         3
+         3   2     2   1
+        2 1
 
     As you can see, we called fibonacci(1) 2 times, fibonacci(2) 3 times and
     fibonacci(3) 2 times. Of course this can grow very fast, so if you call

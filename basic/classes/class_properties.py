@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
 
 """
-    An example of using properties in a class:
-        http://docs.python.org/2/library/functions.html#property
+An example of using properties in a class:
+    http://docs.python.org/2/library/functions.html#property
 
-    Properties have many use-cases, for instance when we want to have a class
-    attribute that is limited to a specific value or type, but don't want to
-    set it using methods like .setX() or something similar.
+Properties have many use-cases, for instance when we want to have a class
+attribute that is limited to a specific value or type, but don't want to set it
+using methods like .setX() or something similar.
 """
 
 
 class Person(object):
+
     """An example Person class. You can set the name and age, with the age
     being limited to non-negative integers.
 

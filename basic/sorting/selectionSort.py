@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-    A simple Selection sort implementation:
-        http://en.wikipedia.org/wiki/Selection_sort
+A simple Selection sort implementation:
+    http://en.wikipedia.org/wiki/Selection_sort
 """
 
 

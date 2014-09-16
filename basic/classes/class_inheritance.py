@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
 """
-    An example of class inheritance.
+An example of class inheritance.
 """
 
 
 class Enemy(object):
+
     """A stupid enemy that doesn't know how to attack, but knows how to die.
 
     >>> stupid = Enemy(10)
@@ -48,6 +49,7 @@ class Enemy(object):
 
 
 class Shaman(Enemy):
+
     """A smarter enemy - can do everything Enemy can, but can also heal
     himself.
 

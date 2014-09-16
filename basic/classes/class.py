@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
 """
-    A class creation and usage example.
+A class creation and usage example.
 """
 
 
 class Person(object):
+
     """Create an example Person class that can introduce himself or herself.
 
     >>> anna = Person("Anna", "Smith", 22)

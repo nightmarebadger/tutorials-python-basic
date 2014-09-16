@@ -14,20 +14,21 @@ number of bottles in the text and we use an if sentance for the last two
 verses.
 """
 
-for i in range(100):
-    bottle_num = 99 - i
-    song = """{0} bottles of beer on the wall, {0} bottles of beer.
-Take one down, pass it around, {1} bottles of beer on the wall ...
-"""
-    song_one = """1 bottle of beer on the wall, 1 bottle of beer.
-Take it down, pass it around, there are no bottles left on the wall ...
-"""
-    song_no = """No more bottles of beer on the wall, no more bottles of beer.
-Go to the store and buy us some more, 99 bottles of beer on the wall ...
-"""
-    if i == 99:
-        print(song_no)
-    elif i == 98:
-        print(song_one)
-    else:
-        print(song.format(bottle_num, bottle_num - 1))
+if __name__ == '__main__':
+    for i in range(100):
+        bottle_num = 99 - i
+        song = ("{0} bottles of beer on the wall, {0} bottles of beer.\n" +
+                "Take one down, pass it around, {1} bottles of beer on the " +
+                "wall ...\n")
+        song_one = ("1 bottle of beer on the wall, 1 bottle of beer.\n" +
+                    "Take it down, pass it around, there are no bottles " +
+                    "left on the wall ...\n")
+        song_no = ("No more bottles of beer on the wall, no more bottles of " +
+                   "beer.\nGo to the store and buy us some more, 99 bottles " +
+                   "of beer on the wall ...\n")
+        if i == 99:
+            print(song_no)
+        elif i == 98:
+            print(song_one)
+        else:
+            print(song.format(bottle_num, bottle_num - 1))

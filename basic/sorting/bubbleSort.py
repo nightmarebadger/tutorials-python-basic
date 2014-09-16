@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-    A simple Bubble sort implementation:
-        http://en.wikipedia.org/wiki/Bubble_sort
+A simple Bubble sort implementation:
+    http://en.wikipedia.org/wiki/Bubble_sort
 """
 
 

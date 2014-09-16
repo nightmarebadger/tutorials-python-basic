@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-    A simple merge sort implementation:
-        http://en.wikipedia.org/wiki/Merge_sort
+A simple merge sort implementation:
+    http://en.wikipedia.org/wiki/Merge_sort
 """
 
 

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 """
-    An example on how to read from a file. Keep in mind that the paths for
-    opening the file are relative, so you need to run this file from inside the
-    folder it is located in for the tests to work.
+An example on how to read from a file. Keep in mind that the paths for opening
+the file are relative, so you need to run this file from inside the folder it
+is located in for the tests to work.
 """
 
 

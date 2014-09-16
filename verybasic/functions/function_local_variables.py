@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-    Remember that the variables passed to a function are local, even if they
-    are named the same as one of the "outside" variables.
+Remember that the variables passed to a function are local, even if they
+are named the same as one of the "outside" variables.
 """
 
 

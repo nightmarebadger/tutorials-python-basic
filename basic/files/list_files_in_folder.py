@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 """
-    An example on how to list all files and folders inside a directory. Keep in
-    mind that the paths are relative, so you need to run this file from inside
-    the folder it is located in for the tests to work.
+An example on how to list all files and folders inside a directory. Keep in
+mind that the paths are relative, so you need to run this file from inside the
+folder it is located in for the tests to work.
 """
 
 from os import getcwd

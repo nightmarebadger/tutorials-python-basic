@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-    A basic implementation of the TicTacToe game which can be played by two
-    human players.
+A basic implementation of the TicTacToe game which can be played by two human
+players.
 """
 
 
@@ -26,7 +26,9 @@ def check_same(li):
 
 
 class TicTacToe(object):
+
     """A class for the TicTacToe game."""
+
     def __init__(self):
         self.ply1 = 'X'
         self.ply2 = 'O'

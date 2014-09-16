@@ -1,6 +1,6 @@
 r"""
-    Some basic string manipulation. Since it's important to know exactly what
-    goes on, all the code will be in a big doctest.
+Some basic string manipulation. Since it's important to know exactly what
+goes on, all the code will be in a big doctest.
 
 
 Let's create a simple string

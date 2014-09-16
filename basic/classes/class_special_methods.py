@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-    An example using some of the Python special class methods. For more
-    information, look here:
-        http://docs.python.org/2/reference/datamodel.html#basic-customization
+An example using some of the Python special class methods.
+    http://docs.python.org/2/reference/datamodel.html#basic-customization
 """
 
 from __future__ import division
@@ -27,6 +26,7 @@ def gcd(a, b):
 
 
 class Fraction(object):
+
     """A simple fraction."""
 
     def __init__(self, x, y):
