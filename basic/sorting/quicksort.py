@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-A simple quick sort implementation:
+A simple Quick sort implementation:
     http://en.wikipedia.org/wiki/Quicksort
 """
 
